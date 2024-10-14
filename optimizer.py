@@ -1,4 +1,4 @@
-import argparse, sys
+import argparse, sys, os
 from PIL import Image, UnidentifiedImageError
 
 class ImageOptimizerError(Exception):
@@ -14,6 +14,12 @@ def image_optimizer(input_file, output_file, quality=85, scale=0.8, verbose=True
     :param scale: Scale of resizing (default: 80%)
     :param verbose: Whether to print messages (default: True)
     """
+
+    input_ext = os.path.splitext(input_file)[1].lower()
+    output_ext = os.path.splitext(output_file)[1].lower()
+
+    if input_ext != output_ext:
+        raise ImageOptimizerError(f"Input file type '{input_ext}' does not match output file type '{output_ext}'.")
 
     try:
         imagem = Image.open(input_file)
