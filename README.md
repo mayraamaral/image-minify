@@ -28,7 +28,7 @@ image-optimizer animals/cat.jpg animais/cat_optimized.jpg
 > The **file extensions of the input and output files must be the same**. For example, if you're optimizing a `.jpg` file, the output file must also have a `.jpg` extension.
   
 ## Supported formats
-Currently, the supported formats are .jpg, .jpeg, and .png.
+Currently, the supported formats are `.jpg`, `.jpeg`, and `.png`.
 
 > [!NOTE]
 > If you try to optimize a GIF file using image-optimizer, the animation will be lost. I may add support for GIF optimization (keeping the animation) in the future.
