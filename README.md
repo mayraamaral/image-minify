@@ -25,7 +25,7 @@ image-optimizer input_image.[jpg,jpeg,png] output_image.[jpg,jpeg,png]
 image-optimizer animals/cat.jpg animais/cat_optimized.jpg
 ```
 > [!IMPORTANT]
-> The **file extensions of the input and output files must be the same**. For example, if you're optimizing a .jpg file, the output file must also have a .jpg extension.
+> The **file extensions of the input and output files must be the same**. For example, if you're optimizing a `.jpg` file, the output file must also have a `.jpg` extension.
   
 ## Supported formats
 Currently, the supported formats are .jpg, .jpeg, and .png.
