@@ -10,8 +10,7 @@
 - [Author](https://github.com/mayraamaral/image-optimizer?tab=readme-ov-file#author)
   
 ## Pre-requisites
-In order to use, you will need Python 3.6 or greater installed.  
-In Linux systems, it usually comes installed as default.  
+In order to use, you will need Python 3.6 or greater installed. In Linux systems, it usually comes installed as default.  
 To check if you have it installed, just open the terminal and run the command below:  
 ```shell
 python3 --version
