@@ -9,6 +9,7 @@ class TestImageOptimizer(unittest.TestCase):
 
         self.test_image = "test_image.png"
         self.output_image = "output_image.png"
+        self.output_image_jpg = "output_image.jpg"
         self.invalid_file = "invalid_file.txt"
 
         # Fake image for testing purposes
@@ -40,6 +41,11 @@ class TestImageOptimizer(unittest.TestCase):
     def test_invalid_image(self):
         with self.assertRaises(ImageOptimizerError):
             image_optimizer(self.invalid_file, self.output_image)
+
+    def test_different_output_type(self):
+        with self.assertRaises(ImageOptimizerError) as context:
+            image_optimizer(self.test_image, self.output_image_jpg)
+
 
 if __name__ == "__main__":
     unittest.main()
