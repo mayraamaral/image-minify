@@ -32,3 +32,24 @@ Currently, the supported formats are `.jpg`, `.jpeg`, and `.png`.
 
 > [!NOTE]
 > If you try to optimize a GIF file using image-optimizer, the animation will be lost. I may add support for GIF optimization (keeping the animation) in the future.
+  
+## Running tests
+To ensure that everything is working correctly, you can run the provided unit tests. These tests validate that the image-optimizer behaves as expected in various scenarios (e.g., handling valid and invalid input files).
+
+### Steps to run tests
+Open your terminal in the root project folder. Then run the following command to execute all the tests:
+```shell
+python -m unittest discover
+```
+This command will automatically discover and run all test files in the project.
+### Example output
+If the tests pass, you should see output like this:
+```shell
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.015s
+
+OK
+```
+## Author
+This project was made with ❤️ by [mayraamaral](https://github.com/mayraamaral).
