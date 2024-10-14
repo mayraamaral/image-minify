@@ -19,7 +19,7 @@ After installation, you can optimize an image by running:
 image-optimizer input_image.[jpg,jpeg,png] output_image.[jpg,jpeg,png]
 ```
 > [!IMPORTANT]
-> he first argument is the path to the input image. For example, if you have an image called `cat.jpg` inside a folder called `animals` and you want to optimize it, you can run:
+> The first argument is the path to the input image. For example, if you have an image called `cat.jpg` inside a folder called `animals` and you want to optimize it, you can run:
   
 ```shell
 image-optimizer animals/cat.jpg animais/cat_optimized.jpg
