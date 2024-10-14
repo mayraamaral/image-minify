@@ -3,7 +3,7 @@
 - [Pre-requisites](https://github.com/mayraamaral/image-optimizer?tab=readme-ov-file#pre-requisites)
 - [Installation](https://github.com/mayraamaral/image-optimizer?tab=readme-ov-file#installation)
 - [Usage](https://github.com/mayraamaral/image-optimizer?tab=readme-ov-file#usage)
-- [Supported formats](https://github.com/mayraamaral/image-optimizer?tab=readme-ov-file#usage)
+- [Supported formats](https://github.com/mayraamaral/image-optimizer?tab=readme-ov-file#supported-formats)
 - [Running tests](https://github.com/mayraamaral/image-optimizer?tab=readme-ov-file#running-tests)
     - [Steps to run tests](https://github.com/mayraamaral/image-optimizer?tab=readme-ov-file#steps-to-run-tests)
     - [Example output](https://github.com/mayraamaral/image-optimizer?tab=readme-ov-file#example-output)
