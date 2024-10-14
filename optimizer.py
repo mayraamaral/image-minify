@@ -1,0 +1,50 @@
+import argparse, sys
+from PIL import Image, UnidentifiedImageError
+
+class ImageOptimizerError(Exception):
+    pass
+
+def image_optimizer(input_file, output_file, quality=85, scale=0.8, verbose=True):
+    """
+    Comprime e redimensiona uma imagem.
+
+    :param input_file: Path to the original image
+    :param output_file: Path to save the output file
+    :param quality: Compression quality (0-100 | default: 85)
+    :param scale: Scale of resizing (default: 80%)
+    :param verbose: Whether to print messages (default: True)
+    """
+
+    try:
+        imagem = Image.open(input_file)
+    except FileNotFoundError:
+        raise ImageOptimizerError(f"File '{input_file}' was not found.")
+    except UnidentifiedImageError:
+        raise ImageOptimizerError(f"File '{input_file}' is not a valid image.")
+
+    width, height = imagem.size
+    new_width = int(width * scale)
+    new_height = int(height * scale)
+    imagem = imagem.resize((new_width, new_height), Image.ANTIALIAS)
+    imagem.save(output_file, optimize=True, quality=quality)
+    
+    if verbose:
+        print(f"Image successfully optimized and save as '{output_file}'.")
+
+def main():
+    parser = argparse.ArgumentParser(description="Compress and resize images.")
+    parser.add_argument("input_file", type=str, help="Path to the original image")
+    parser.add_argument("output_file", type=str, help="Path to save the output file")
+    parser.add_argument("--quality", type=int, default=85, help="Compression quality (0-100)")
+    parser.add_argument("--scale", type=float, default=0.8, help="Scale of resizing (0.1 a 1.0)")
+    
+    args = parser.parse_args()
+    
+    try:
+        image_optimizer(args.input_file, args.output_file, args.quality, args.scale)
+    except ImageOptimizerError as e:
+        print(f"Error: {e}")
+        sys.exit(1)
+
+if __name__ == "__main__":
+    main()
