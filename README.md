@@ -1,4 +1,14 @@
 # Image Optimizer
+## Summary
+- [Pre-requisites](https://github.com/mayraamaral/image-optimizer?tab=readme-ov-file#pre-requisites)
+- [Installation](https://github.com/mayraamaral/image-optimizer?tab=readme-ov-file#installation)
+- [Usage](https://github.com/mayraamaral/image-optimizer?tab=readme-ov-file#usage)
+- [Supported formats](https://github.com/mayraamaral/image-optimizer?tab=readme-ov-file#usage)
+- [Running tests](https://github.com/mayraamaral/image-optimizer?tab=readme-ov-file#running-tests)
+    - [Steps to run tests](https://github.com/mayraamaral/image-optimizer?tab=readme-ov-file#steps-to-run-tests)
+    - [Example output](https://github.com/mayraamaral/image-optimizer?tab=readme-ov-file#example-output)
+- [Author](https://github.com/mayraamaral/image-optimizer?tab=readme-ov-file#author)
+  
 ## Pre-requisites
 In order to use, you will need Python 3.6 or greater installed.  
 In Linux systems, it usually comes installed as default.  
