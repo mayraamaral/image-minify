@@ -6,7 +6,7 @@ class ImageOptimizerError(Exception):
 
 def image_optimizer(input_file, output_file, quality=85, scale=0.8, verbose=True):
     """
-    Comprime e redimensiona uma imagem.
+    Compress and resize an image.
 
     :param input_file: Path to the original image
     :param output_file: Path to save the output file
