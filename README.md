@@ -32,7 +32,7 @@ image-optimizer input_image.[jpg,jpeg,png] output_image.[jpg,jpeg,png]
 > The first argument is the path to the input image. For example, if you have an image called `cat.jpg` inside a folder called `animals` and you want to optimize it, you can run:
   
 ```shell
-image-optimizer animals/cat.jpg animais/cat_optimized.jpg
+image-optimizer animals/cat.jpg animals/cat_optimized.jpg
 ```
 > [!IMPORTANT]
 > The **file extensions of the input and output files must be the same**. For example, if you're optimizing a `.jpg` file, the output file must also have a `.jpg` extension.
