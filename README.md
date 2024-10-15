@@ -41,6 +41,7 @@ image-optimizer animals/cat.jpg animais/cat_optimized.jpg
 In addition to the mandatory input and output file paths, the `image-optimizer` offers optional parameters to customize the behavior of the image optimization process. These parameters give you control over the compression quality, resizing scale, and the verbosity of the process. Below is a detailed explanation of each optional parameter:
 
 - `--quality`
+  
 **Description:** This parameter controls the quality of the image after compression. The value must be an integer between 0 (maximum compression, lowest quality) and 100 (no compression, maximum quality).
 **Default value:** `85`
   
@@ -50,6 +51,7 @@ image-optimizer input_image.jpg output_image.jpg --quality 75
 ```
 This example will compress the image and save it with a quality level of 75.
 - `--scale`
+  
 **Description:** This parameter allows you to resize the image by a given scale factor. The value must be a float between 0.1 (10% of the original size) and 1.0 (100%, i.e., no resizing).
 **Default value:** `0.8`
   
@@ -59,6 +61,7 @@ image-optimizer input_image.jpg output_image.jpg --scale 0.5
 ```
 This example resizes the image to 50% of its original dimensions.
 - `--verbose` / `--no-verbose`
+  
 **Description:** This boolean flag controls whether to print messages about the optimization process. By default, `--verbose` is enabled, which prints a message when the image is successfully optimized. You can disable this by using `--no-verbose`.
 Default value: `--verbose` (enabled by default)
   
