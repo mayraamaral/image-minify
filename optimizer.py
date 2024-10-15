@@ -43,11 +43,12 @@ def main():
     parser.add_argument("output_file", type=str, help="Path to save the output file")
     parser.add_argument("--quality", type=int, default=85, help="Compression quality (0-100)")
     parser.add_argument("--scale", type=float, default=0.8, help="Scale of resizing (0.1 a 1.0)")
+    parser.add_argument("--verbose", action=argparse.BooleanOptionalAction, default=True, help="Whether to print messages (--verbose / --no-verbose)")
     
     args = parser.parse_args()
     
     try:
-        image_optimizer(args.input_file, args.output_file, args.quality, args.scale)
+        image_optimizer(args.input_file, args.output_file, args.quality, args.scale, args.verbose)
     except ImageOptimizerError as e:
         print(f"Error: {e}")
         sys.exit(1)
